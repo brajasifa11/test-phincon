@@ -1,0 +1,48 @@
+@import '../../styles/index.scss';
+
+.container {
+  .wraper {
+    @include main;
+    .popup {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 2%;
+    }
+    .form {
+      width: 100%;
+      display: flex;
+      form {
+        gap: 4%;
+        margin-bottom: 1%;
+        @include flexColumn;
+        @include content-center;
+        border-radius: 16px;
+        input {
+          min-height: 24px;
+          padding-left: 2px;
+        }
+        .btn {
+          cursor: pointer;
+          color: $color-white;
+          @include main;
+          margin-top: 10%;
+          min-width: 40px;
+          padding: 2% 5%;
+          background-color: $color-blue;
+          border-radius: 16px;
+        }
+      }
+    }
+    .body {
+      width: 90%;
+      padding: 1% 0%;
+      @include flexRow;
+      @include content-center;
+      margin-bottom: 5%;
+      background-color: $color-dark-red;
+      box-shadow: $color-box-secondary;
+      border-radius: 16px;
+      flex-wrap: wrap;
+    }
+  }
+}

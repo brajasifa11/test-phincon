@@ -1,0 +1,47 @@
+@import '../../styles/index.scss';
+
+.container {
+  @include content-center;
+  text-align: center;
+  .wraper {
+    @include main;
+    width: 260px;
+    @include content-center;
+    background-color: $color-blue;
+    border-radius: 16px;
+    margin: 5% 0%;
+    .card {
+      cursor: pointer;
+      padding: 2% 0%;
+      img {
+        @include content-center;
+        display: flex;
+        width: 50%;
+      }
+      p {
+        color: $color-white;
+        text-align: center;
+        font-size: 20px;
+      }
+      .btnWraper {
+        @include flexRow;
+        justify-content: space-around;
+        padding-bottom: 6%;
+        margin-top: 7%;
+        .btnRename {
+          min-width: 40px;
+          padding: 2% 5%;
+          background-color: $color-dark-yellow;
+          border-radius: 16px;
+        }
+        .btnRelease {
+          min-width: 40px;
+          padding: 5%;
+          padding: 2% 5%;
+          background-color: $color-red;
+          border-radius: 16px;
+        }
+      }
+    }
+  }
+}

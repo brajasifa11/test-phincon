@@ -1,0 +1,18 @@
+@import '../../styles/index.scss';
+
+.container {
+  .wraper {
+    @include main;
+    .body {
+      width: 90%;
+      padding: 1% 0%;
+      @include flexRow;
+      @include content-center;
+      margin-bottom: 5%;
+      background-color: $color-dark-red;
+      box-shadow: $color-box-secondary;
+      border-radius: 16px;
+      flex-wrap: wrap;
+    }
+  }
+}

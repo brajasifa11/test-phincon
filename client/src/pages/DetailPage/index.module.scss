@@ -1,0 +1,88 @@
+@import '../../styles/index.scss';
+
+.container {
+  @include flexColumn;
+  .wraper {
+    @include main;
+    .notifFailed {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 2%;
+    }
+    .form {
+      width: 100%;
+      display: flex;
+      form {
+        gap: 4%;
+        margin-bottom: 1%;
+        @include flexColumn;
+        @include content-center;
+        border-radius: 16px;
+        input {
+          min-height: 24px;
+          padding-left: 2px;
+        }
+        .btn {
+          cursor: pointer;
+          color: $color-white;
+          @include main;
+          margin-top: 10%;
+          min-width: 40px;
+          padding: 2% 5%;
+          background-color: $color-blue;
+          border-radius: 16px;
+        }
+      }
+    }
+    .body {
+      width: 90%;
+      @include content-center;
+      @include flexRow;
+      @include apply-at-sm-size {
+        @include flexColumn;
+      }
+      .card {
+        width: 40%;
+        background-color: $color-blue;
+        text-align: center;
+        padding-bottom: 5%;
+        color: $color-white;
+        font-size: 30px;
+        margin-bottom: 5%;
+        @include apply-at-sm-size {
+          width: 100%;
+        }
+        img {
+          width: 60%;
+          @include content-center;
+          display: flex;
+        }
+      }
+      .rightSection {
+        width: 60%;
+        @include flexColumn;
+        .details {
+          p {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 5% 5%;
+          }
+        }
+        .btnCatch {
+          cursor: pointer;
+          width: 20%;
+          min-width: 40px;
+          text-align: center;
+          margin-top: 5%;
+          margin-left: 8%;
+          padding: 2% 5%;
+          background-color: $color-dark-yellow;
+          border-radius: 16px;
+          @include apply-at-sm-size {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
