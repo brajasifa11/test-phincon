@@ -90,7 +90,7 @@ const Detail = () => {
           </div>
           <div className={classes.rightSection}>
             <div className={classes.details}>
-              <p>MOVES : {pokemon?.move}</p>
+              <p>MOVES : {pokemon?.moves}</p>
               <p>TYPES : {pokemon?.types}</p>
               <p>ABILITIES : {pokemon?.abilities}</p>
             </div>
